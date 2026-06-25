@@ -1,12 +1,75 @@
-/*universal selector*/
+/* universal selector */
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* এটি দিলে প্যাডিং মার্জিন হিসাব করা সহজ হয় */
+    font-family: sans-serif;
 }
+
 nav{
-    background-color: aqua;
     display: flex;
-   justify-content: space-around;
-   max-width: 1350;
-   margin: auto;
+    justify-content: space-between; /* দুই মাথায় দুটিকে পাঠানোর জন্য */
+    align-items: center;
+    background-color: #16ba8e;
+    border-radius: 8px;
+
+    max-width: 500px; /* এখানে px যুক্ত করলাম */
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.btn-signin {
+    background-color: #f7faf9;
+    color: rgb(10, 10, 10); /*font color*/
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- হিরো বা ব্যানার সেকশনের ডিজাইন --- */
+.hero-container {
+    max-width: 1350px;
+    margin: 20px auto;
+    background-color: #8af0c7; /* ফিগমার সেই হালকা সবুজ ব্যাকগ্রাউন্ড */
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-sub {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: #111;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.btn-explore {
+    background-color: #006A4E; /* গাঢ় সবুজ */
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-img img {
+    max-width: 500px; /* ছবিটার সাইজ কন্ট্রোল করার জন্য */
+    height: auto;
 }
